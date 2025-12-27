@@ -128,7 +128,7 @@ export default function Portfolio() {
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold">Education</h2>
         <ul className="text-gray-700 space-y-2">
-          <li><strong>B.Tech in Computer Science</strong> — Amrita University (2021 – Present)</li>
+          <li><strong>B.Tech in Computer Science</strong> — Amrita University (2021 – 2025)</li>
           <li><strong>Higher Secondary</strong> — Model Higher Secondary School (99% PCM & Biology)</li>
         </ul>
       </section>
@@ -148,7 +148,6 @@ export default function Portfolio() {
         <h2 className="text-2xl font-semibold">Leadership & Community</h2>
         <ul className="list-disc list-inside text-gray-700">
           <li>Security Team Lead — Blockcamp National Hackathon</li>
-          <li>Founder, Unchain — Community initiative against substance abuse</li>
         </ul>
       </section>
 
