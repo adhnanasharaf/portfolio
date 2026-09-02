@@ -160,7 +160,7 @@ export default function Portfolio() {
 
           <div className="space-y-4 max-w-4xl">
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
-              Adhnan A
+              ADHNAN A
             </h1>
             <p className="text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-slate-200 via-indigo-200 to-blue-300 font-medium">
               AI Engineer · Applied LLMs & Multi-Agent Orchestration · Researcher
