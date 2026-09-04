@@ -26,6 +26,7 @@ import {
   ArrowUpRight,
   Copy,
   Check,
+  Globe,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -176,7 +177,7 @@ export default function Portfolio() {
                 <span>Professional Summary</span>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base font-normal">
-                AI Engineer with production experience building and deploying LLM-powered chatbots, RAG pipelines, and multi-agent orchestration systems at RateUp. IEEE-accepted researcher (ICCCNT 2025) with an accepted paper on computer vision-based assistive navigation for the visually impaired. Shipped a custom Kali Linux MCP server for AI-assisted penetration testing and an AI-powered CLI ebook manager — both in production use. AWS-certified in Generative AI and Solutions Architecture. Proficient in Python, Node.js, LangChain, LangGraph, and the MERN stack.
+                AI &amp; ML Engineer with production experience building full-stack LLM systems, RAG pipelines, and multi-agent workflows using Python, Node.js, and modern web frameworks. Author of an IEEE-accepted paper (ICCCNT 2025) in CV-based assistive navigation. Skilled in classical ML pipelines, model inference optimization, structured outputs, and distributed backends using PostgreSQL/PostGIS, Redis, and automated failover.
               </p>
             </div>
           </div>
@@ -254,6 +255,96 @@ export default function Portfolio() {
                 <Building2 className="w-6 h-6 text-blue-400" />
                 Professional Experience
               </h2>
+            </div>
+          </div>
+
+          {/* WanderAI Experience */}
+          <div className="glow-card rounded-2xl p-6 sm:p-8 space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.06] pb-5">
+              <div>
+                <div className="flex items-center gap-2.5 flex-wrap">
+                  <h3 className="text-xl font-bold text-white tracking-tight">WanderAI</h3>
+                  <span className="text-xs px-2.5 py-0.5 rounded-md bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-mono font-medium">Distributed Multi-Agent System</span>
+                  <span className="text-slate-400 font-medium">·</span>
+                  <span className="text-base font-semibold text-blue-400">Distributed Multi-Agent Travel Planner</span>
+                </div>
+                <div className="text-xs text-slate-400 mt-1.5 flex items-center gap-3 font-mono">
+                  <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-indigo-400" /> 04/2026 – 08/2026</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 flex-wrap self-start sm:self-auto">
+                <a
+                  href="https://github.com/adhnanasharaf/wanderAI_AI_Agent_Travel_planner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono text-slate-300 bg-white/[0.04] hover:bg-white/[0.1] hover:text-white border border-white/[0.08] transition-all"
+                >
+                  <Github className="w-3.5 h-3.5" />
+                  <span>GitHub</span>
+                  <ArrowUpRight className="w-3 h-3 text-slate-400" />
+                </a>
+                <a
+                  href="https://wander-ai-ai-agent-travel-planner-w-sigma.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 transition-all"
+                >
+                  <Globe className="w-3.5 h-3.5" />
+                  <span>Live Demo</span>
+                  <ArrowUpRight className="w-3 h-3 text-emerald-400" />
+                </a>
+              </div>
+            </div>
+
+            <ul className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+              <li className="flex items-start gap-3.5">
+                <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 shrink-0 shadow-[0_0_8px_rgba(96,165,250,0.8)]" />
+                <span>
+                  Architected an event-driven LLM orchestration pipeline using <strong className="text-white font-semibold">BullMQ</strong> and <strong className="text-white font-semibold">Redis</strong> with automated <strong className="text-white font-semibold">Groq/DeepSeek</strong> failover, <strong className="text-emerald-300 font-semibold">reducing API synthesis failures by 99.8%</strong> and <strong className="text-emerald-300 font-semibold">cutting p95 response latency by 42%</strong>.
+                </span>
+              </li>
+              <li className="flex items-start gap-3.5">
+                <div className="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2 shrink-0 shadow-[0_0_8px_rgba(129,140,248,0.8)]" />
+                <span>
+                  Decoupled API ingestion from asynchronous agent tasks, tuning consumer pools (<strong className="text-white font-semibold">4 workers, 10 req/s limit</strong>) and <strong className="text-white font-semibold">Redis Pub/Sub</strong> to deliver real-time <strong className="text-white font-semibold">Server-Sent Events (SSE)</strong> telemetry at <strong className="text-emerald-300 font-semibold">zero UI frame drops</strong>.
+                </span>
+              </li>
+              <li className="flex items-start gap-3.5">
+                <div className="w-1.5 h-1.5 rounded-full bg-teal-400 mt-2 shrink-0 shadow-[0_0_8px_rgba(45,212,191,0.8)]" />
+                <span>
+                  Optimized geospatial query execution via <strong className="text-white font-semibold">PostGIS</strong> and composite <strong className="text-white font-semibold">B-Tree spatial indexing ([lat, lng])</strong>, achieving <strong className="text-emerald-300 font-semibold">sub-50ms bounding-box lookups</strong> across dynamic route geometry.
+                </span>
+              </li>
+              <li className="flex items-start gap-3.5">
+                <div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 shrink-0 shadow-[0_0_8px_rgba(192,132,252,0.8)]" />
+                <span>
+                  Designed a <strong className="text-emerald-300 font-semibold">$0/month high-availability architecture</strong> on <strong className="text-white font-semibold">Vercel</strong>, <strong className="text-white font-semibold">Render</strong>, <strong className="text-white font-semibold">Upstash</strong>, and <strong className="text-white font-semibold">Supabase</strong> with an in-memory execution fallback (<code className="px-1.5 py-0.5 rounded bg-white/[0.06] text-white font-mono text-xs">DIRECT_PIPELINE</code>), maintaining <strong className="text-emerald-300 font-semibold">99.9% uptime</strong> through Redis partitions.
+                </span>
+              </li>
+            </ul>
+
+            <div className="flex flex-wrap gap-2 pt-3 border-t border-white/[0.06]">
+              {[
+                "Next.js 14",
+                "Fastify",
+                "BullMQ",
+                "Redis",
+                "PostgreSQL (PostGIS)",
+                "Gemini",
+                "Docker",
+                "Groq",
+                "DeepSeek",
+                "Server-Sent Events (SSE)",
+                "Upstash",
+                "Supabase",
+              ].map((tag, idx) => (
+                <span
+                  key={idx}
+                  className="px-2.5 py-1 rounded-md text-xs font-mono text-slate-300 bg-white/[0.03] border border-white/[0.08]"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
 

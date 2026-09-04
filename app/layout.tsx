@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Adhnan A — AI Engineer & Researcher",
     description:
-      "AI Engineer with production experience building LLM chatbots, RAG pipelines, and multi-agent systems at RateUp. IEEE-accepted researcher.",
+      "AI & ML Engineer with production experience building full-stack LLM systems, RAG pipelines, multi-agent workflows, and distributed backends. IEEE-accepted researcher.",
     url: "https://adhnan-portfolio.vercel.app/",
     siteName: "Adhnan A Portfolio",
     type: "website",
