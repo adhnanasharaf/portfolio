@@ -45,6 +45,11 @@ export default function Portfolio() {
       icon: BrainCircuit,
       skills: [
         "PyTorch",
+        "Scikit-learn",
+        "XGBoost",
+        "SMOTE (Class Imbalance)",
+        "Feature Engineering",
+        "EDA & Model Evaluation",
         "Neural Networks",
         "ML Architecture",
         "ML Training",
@@ -67,6 +72,7 @@ export default function Portfolio() {
       icon: Code2,
       skills: [
         "Python",
+        "Pandas & NumPy",
         "JavaScript (ES6+)",
         "TypeScript",
         "Java",
@@ -82,6 +88,7 @@ export default function Portfolio() {
       skills: [
         "React.js",
         "Next.js",
+        "Streamlit",
         "Node.js",
         "Express.js",
         "FastAPI",
@@ -110,6 +117,7 @@ export default function Portfolio() {
       icon: Cloud,
       skills: [
         "AWS (S3, EC2, Elastic Beanstalk)",
+        "Render",
         "Docker",
         "Git",
         "GitHub Actions",
@@ -121,6 +129,7 @@ export default function Portfolio() {
       category: "Tools & Security",
       icon: Wrench,
       skills: [
+        "Matplotlib & Seaborn",
         "MCP Servers",
         "Claude AI",
         "Postman",
@@ -414,6 +423,93 @@ export default function Portfolio() {
                 "AWS",
                 "Multi-Agent",
                 "LLMOps",
+              ].map((tag, idx) => (
+                <span
+                  key={idx}
+                  className="px-2.5 py-1 rounded-md text-xs font-mono text-slate-300 bg-white/[0.03] border border-white/[0.08]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Telco Customer Churn Prediction Engine Experience */}
+          <div className="glow-card rounded-2xl p-6 sm:p-8 space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.06] pb-5">
+              <div>
+                <div className="flex items-center gap-2.5 flex-wrap">
+                  <h3 className="text-xl font-bold text-white tracking-tight">Telco Customer Churn Prediction Engine</h3>
+                  <span className="text-xs px-2.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 font-mono font-medium">
+                    Machine Learning & Predictive Modeling
+                  </span>
+                  <span className="text-slate-400 font-medium">·</span>
+                  <span className="text-base font-semibold text-blue-400">ML Pipeline & Inference Dashboard</span>
+                </div>
+                <div className="text-xs text-slate-400 mt-1.5 flex items-center gap-3 font-mono">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3.5 h-3.5 text-indigo-400" /> End-to-End ML Pipeline
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 flex-wrap self-start sm:self-auto">
+                <a
+                  href="https://github.com/adhnanasharaf/teleco_customer_churn_ML_Model"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono text-slate-300 bg-white/[0.04] hover:bg-white/[0.1] hover:text-white border border-white/[0.08] transition-all"
+                >
+                  <Github className="w-3.5 h-3.5" />
+                  <span>GitHub</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" />
+                </a>
+                <a
+                  href="https://teleco-customer-churn-ml-model.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 transition-all"
+                >
+                  <Globe className="w-3.5 h-3.5" />
+                  <span>Live Demo</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-emerald-400" />
+                </a>
+              </div>
+            </div>
+
+            <ul className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+              <li className="flex items-start gap-3.5">
+                <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 shrink-0 shadow-[0_0_8px_rgba(96,165,250,0.8)]" />
+                <span>
+                  Engineered an end-to-end customer churn prediction pipeline on <strong className="text-emerald-300 font-semibold">7,000+ customer records</strong>, performing statistical <strong className="text-white font-semibold">Exploratory Data Analysis (EDA)</strong>, categorical feature encoding, and outlier mitigation to identify key retention drivers (<strong className="text-white font-semibold">tenure, contract type, and monthly charges</strong>).
+                </span>
+              </li>
+              <li className="flex items-start gap-3.5">
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
+                <span>
+                  Addressed extreme class imbalance using <strong className="text-white font-semibold">SMOTE (Synthetic Minority Over-sampling Technique)</strong> and probability threshold tuning, boosting minority-class recall and achieving an <strong className="text-emerald-300 font-semibold">84% ROC-AUC</strong> with an <strong className="text-emerald-300 font-semibold">18% performance lift</strong> across baseline ensemble classifiers (<strong className="text-white font-semibold">Random Forest &amp; XGBoost</strong>).
+                </span>
+              </li>
+              <li className="flex items-start gap-3.5">
+                <div className="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2 shrink-0 shadow-[0_0_8px_rgba(129,140,248,0.8)]" />
+                <span>
+                  Deployed an interactive real-time inference web application using <strong className="text-white font-semibold">Streamlit</strong> on <strong className="text-white font-semibold">Render</strong> for on-demand customer risk scoring, surfacing top churn risk factors and feature importances for proactive retention targeting.
+                </span>
+              </li>
+            </ul>
+
+            <div className="flex flex-wrap gap-2 pt-3 border-t border-white/[0.06]">
+              {[
+                "Python",
+                "Scikit-learn",
+                "XGBoost",
+                "SMOTE",
+                "Pandas",
+                "Streamlit",
+                "Matplotlib",
+                "Feature Engineering",
+                "EDA",
+                "ROC-AUC",
+                "Render",
               ].map((tag, idx) => (
                 <span
                   key={idx}
